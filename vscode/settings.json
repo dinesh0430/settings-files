@@ -1,0 +1,93 @@
+// All custom vscode settings will go here
+{
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.lineNumbers": "relative",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "editor.fontFamily": "JetBrainsMono NF",
+    "editor.fontLigatures": true,
+    "customizeUI.font.monospace": "JetBrainsMono NF",
+    "customizeUI.font.regular": "Rubik",
+    "customizeUI.fontSizeMap": {
+        "13px": "13px"
+    },
+    "git.confirmSync": false,
+    "window.zoomLevel": 1,
+    "explorer.confirmDelete": false,
+    "terminal.integrated.tabs.enabled": true,
+    "git.enableSmartCommit": true,
+    "gitlens.currentLine.pullRequests.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.currentLine.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.hovers.avatars": false,
+    "gitlens.hovers.pullRequests.enabled": false,
+    // Vim settings start here
+    "vim.handleKeys": {
+        "<C-d>": true
+    },
+    "vim.camelCaseMotion.enable": true,
+    "vim.easymotion": true,
+    "vim.normalModeKeyBindings": [
+        // Mappings for core visual studio code 
+        {
+            "before": ["<leader>",";"],
+            "commands": [
+                "workbench.action.showCommands",
+            ]
+        },
+        {
+            "before": ["<leader>","<leader>","g","c"],
+            "commands": [
+                "git.commit","git.push"
+            ]
+        },
+        {
+            "before": ["<leader>","<leader>","B"],
+            "commands": [
+                "workbench.action.toggleActivityBarVisibility", "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        // Mapping easy-motion keybindings for easy access
+		{
+			"before": ["<leader>","j"],
+            "after":  [ "<leader>","<leader>","j"]
+        },
+        {
+			"before": ["<leader>","k"],
+            "after":  [ "<leader>","<leader>","k"]
+        },
+        {
+			"before": ["<leader>","w"],
+            "after":  [ "<leader>","<leader>","w"]
+        },
+        {
+			"before": ["<leader>","b"],
+            "after":  [ "<leader>","<leader>","b"]
+        },
+        {
+			"before": ["<leader>","f"],
+            "after":  [ "<leader>","<leader>","f"]
+        },
+        {
+			"before": ["<leader>","/"],
+            "after":  [ "<leader>","<leader>","/"]
+        }
+
+    ],
+    "vim.highlightedyank.enable": true,
+    "vim.leader": ",",
+    "vim.sneak": true,
+    "vim.replaceWithRegister": true
+}
