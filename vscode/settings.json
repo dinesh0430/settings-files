@@ -1,4 +1,4 @@
-// All custom vscode settings will go here
+// All custom vscode settings will go here:
 {
     "workbench.colorTheme": "One Dark Pro",
     "workbench.iconTheme": "material-icon-theme",
